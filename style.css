@@ -29,10 +29,9 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    display: block;
+    display: inline;
     justify-content: center;
     align-items: center;
-    /* background: #23E3C9; */
 }
 
 .container .text {
@@ -57,7 +56,7 @@
 
 .slider {
     width: 400px;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -79,16 +78,15 @@
 .slide img {
     width: 500px;
     height: 500px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .navigation-manual {
     position: absolute;
     width: 400px;
     left: 0;
-    margin-top: 340px;
+    margin-top: 300px;
     display: flex;
-    justify-content: center;
 }
 
 .manual-btn {
@@ -100,7 +98,7 @@
 }
 
 .manual-btn:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 40px;
 }
 
 .manual-btn:hover {
@@ -122,14 +120,6 @@
 #radio4:checked~.first {
     margin-left: -60%;
 }
-
-/* .navigation-auto {
-    position: absolute;
-    display: flex;
-    width: 800px;
-    justify-content: center;
-    margin-top: 460px;
-} */
 
 .navigation-auto div {
     border: 2px solid #40D3DC;
@@ -176,6 +166,7 @@
     display: block;
     margin: 0 10px;
     margin-top: 10px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     width: 400px;
@@ -185,10 +176,8 @@
 }
 
 .little {
-    left: 20px;
-    right: 20px;
     display: flex;
-    justify-content: center;
+    padding: auto;
 }
 
 .container .image-body .little img {
@@ -196,24 +185,26 @@
     height: 150px;
     object-fit: cover;
     border: 12px solid #D0E7FE;
+    justify-content: space-between;
+
 }
 
-.container .image-body .little-img:active {
-    transform: translateY(4px);
-}
 
 #footer {
-    /* position: sticky; */
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 50px;
-    color: #190845;
+    height: 30px;
+    margin-top: 50px;
+    color: #111;
     background-color: #D0E7FE;
     text-align: center;
 }
 
 #footer p {
+    display: inline-block;
     font-family: 'Poppins', sans-serif;
-    font-size: 10px;
-    font-style: italic;
+    font-size: 8px;
+    margin-top: 10px;
+    text-align: center;
 }
